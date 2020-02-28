@@ -1,0 +1,17 @@
+plugin: gcp_compute
+projects:
+  - docker-268806
+zones:
+  - europe-west1-b
+auth_kind: serviceaccount
+service_account_file: /home/algiorgio/Documents/credentials/GCP/docker-268806-baf7fa60c599.json
+scopes:
+ - 'https://www.googleapis.com/auth/cloud-platform'
+ - 'https://www.googleapis.com/auth/compute.readonly'
+groups:
+  app: "'container-app' in name"
+hostnames:
+  - name
+compose:
+  ansible_host: networkInterfaces[0].accessConfigs[0].natIP
+  ansible_internal_ip: networkInterfaces[0].networkIP

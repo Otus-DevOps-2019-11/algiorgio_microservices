@@ -1,0 +1,9 @@
+app_name         = "container-app"
+project          = "docker-268806"
+region           = "europe-west1"
+zone             = "europe-west1-b"
+instance_amount  = 2
+boot_disk_image  = "docker-host-image"
+public_key_path  = "~/.ssh/appuser.pub"
+private_key_path = "~/.ssh/appuser"
+source_ranges    = ["0.0.0.0/0"]

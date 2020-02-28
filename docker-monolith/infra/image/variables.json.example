@@ -1,0 +1,13 @@
+{
+    "project_id": "docker-268806",
+    "image_name": "docker-host-image-{{timestamp}}",
+    "image_family": "docker-host-image",
+    "source_image_family": "ubuntu-1604-lts",
+    "image_description": "Image for a host with docker on board",
+    "zone": "europe-west1-b",
+    "ssh_username": "appuser",
+    "machine_type": "g1-small",
+    "disk_size": "10",
+    "disk_type": "pd-ssd",
+    "network": "default"
+}
